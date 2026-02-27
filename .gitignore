@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+mlruns/
+models/
+data/raw/
+data/processed/
