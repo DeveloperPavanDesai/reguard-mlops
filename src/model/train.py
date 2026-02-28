@@ -43,6 +43,8 @@ def train_model(dropout=0.0, l1_lambda=0.0, l2_lambda=0.0, epochs=5):
         print(f"Epoch {epoch+1}, Loss: {total_loss:.4f}")
         mlflow.log_metric("train_loss", total_loss, step=epoch)
 
+    torch.save(model.state_dict(), "models/mnist_model.pth")
+
     mlflow.pytorch.log_model(model, "model")
     mlflow.end_run()
 
