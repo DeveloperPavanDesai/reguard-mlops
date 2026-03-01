@@ -1,5 +1,13 @@
+# ML / data
 torch
 torchvision
 numpy
-dvc
+certifi
+
+# Experiment tracking & data versioning
 mlflow
+dvc
+
+# API
+fastapi
+uvicorn[standard]
